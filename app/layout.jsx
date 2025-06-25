@@ -1,14 +1,17 @@
 import "../assets/styles/globals.css";
+import Navbar from "@/components/Navbar";
+
 export const metadata = {
   title: "Property Pulse",
   keywords: "real estate, property, rental, buy, sell, invest",
   description: "Find the perfect rental property",
 };
-import React from "react";
+
 const MainLayout = ({ children }) => {
   return (
-    <html>
+    <html lang="en" >
       <body>
+        <Navbar />
         <main>{children}</main>
       </body>
     </html>
