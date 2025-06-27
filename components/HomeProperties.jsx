@@ -16,8 +16,8 @@ const HomeProperties = () => {
               <p>No properties found</p>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {recentProperties.map((property) => (
-                  <PropertyCard property={property} />
+                {recentProperties.map((property, index ) => (
+                  <PropertyCard property={property} key={index} />
                 ))}
               </div>
             )}
