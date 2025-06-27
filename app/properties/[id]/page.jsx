@@ -1,9 +1,8 @@
-
-const PropertyPage = ({params}) => {
-
+const PropertyPage = async ({ params }) => {
+  const propertyId = params.id;
   return (
     <>
-      <div>Property page {params.id}</div>
+      <div>Property page {propertyId}</div>
       <div></div>
     </>
   );
